@@ -10,8 +10,7 @@ source:
 
 build:
   number: 2
-  script: {{ PYTHON }} -m pip install . --no-deps -vv    # [py==27]
-  script: echo "dummy package for python 3"              # [py> 27]
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
